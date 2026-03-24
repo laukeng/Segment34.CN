@@ -753,7 +753,7 @@
         </settingConfig>
     </setting>
 
-    <setting propertyKey="@Properties.aodRightFieldShows" title="Second Always On Field (to the right):">
+    <setting propertyKey="@Properties.aodRightFieldShows" title="@Strings.settings_second_always_on">
         <settingConfig type="list">
             <listEntry value="-2">@Strings.settings_hidden</listEntry>
             <listEntry value="17">@Strings.settings_steps_day</listEntry>

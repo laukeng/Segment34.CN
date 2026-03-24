@@ -1,6 +1,6 @@
 info face="LED" size=13 bold=0 italic=0 smooth=1 spacing=1,1
 common lineHeight=13 base=13 scaleW=572 scaleH=13 pages=1
-page id=0 file="led_small3.png"
+page id=0 file="led_lines_13.png"
 chars count=11
 char id=48 x=0 y=0 width=9 height=13 xoffset=0 yoffset=0 xadvance=12 page=0
 char id=49 x=11 y=0 width=7 height=13 xoffset=2 yoffset=0 xadvance=12 page=0
@@ -85,3 +85,12 @@ char id=192 x=755 y=0 width=9 height=13 xoffset=0 yoffset=0 xadvance=12 page=0
 char id=262 x=765 y=0 width=9 height=13 xoffset=0 yoffset=0 xadvance=12 page=0
 char id=323 x=775 y=0 width=9 height=13 xoffset=0 yoffset=0 xadvance=12 page=0
 char id=377 x=785 y=0 width=9 height=13 xoffset=0 yoffset=0 xadvance=12 page=0
+
+char id=19968 x=795 y=0 width=15 height=13 xoffset=0 yoffset=0 xadvance=15 page=0 chnl=15
+char id=19977 x=810 y=0 width=15 height=13 xoffset=0 yoffset=0 xadvance=15 page=0 chnl=15
+char id=20108 x=825 y=0 width=15 height=13 xoffset=0 yoffset=0 xadvance=15 page=0 chnl=15
+char id=20116 x=840 y=0 width=15 height=13 xoffset=0 yoffset=0 xadvance=15 page=0 chnl=15
+char id=20845 x=855 y=0 width=15 height=13 xoffset=0 yoffset=0 xadvance=15 page=0 chnl=15
+char id=21608 x=870 y=0 width=15 height=13 xoffset=0 yoffset=0 xadvance=15 page=0 chnl=15
+char id=22235 x=885 y=0 width=15 height=13 xoffset=0 yoffset=0 xadvance=15 page=0 chnl=15
+char id=26085 x=900 y=0 width=14 height=13 xoffset=0 yoffset=0 xadvance=14 page=0 chnl=15

@@ -65,13 +65,13 @@
     <string id="WEATHER_52">THIN CLOUDS</string>
     <string id="WEATHER_53">UNKNOWN</string>
 
-    <string id="DAY_OF_WEEK_SUN">SUN</string>
-    <string id="DAY_OF_WEEK_MON">MON</string>
-    <string id="DAY_OF_WEEK_TUE">TUE</string>
-    <string id="DAY_OF_WEEK_WED">WED</string>
-    <string id="DAY_OF_WEEK_THU">THU</string>
-    <string id="DAY_OF_WEEK_FRI">FRI</string>
-    <string id="DAY_OF_WEEK_SAT">SAT</string>
+    <string id="DAY_OF_WEEK_SUN">周日</string>
+    <string id="DAY_OF_WEEK_MON">周一</string>
+    <string id="DAY_OF_WEEK_TUE">周二</string>
+    <string id="DAY_OF_WEEK_WED">周三</string>
+    <string id="DAY_OF_WEEK_THU">周四</string>
+    <string id="DAY_OF_WEEK_FRI">周五</string>
+    <string id="DAY_OF_WEEK_SAT">周六</string>
 
     <string id="MONTH_JAN">JAN</string>
     <string id="MONTH_FEB">FEB</string>

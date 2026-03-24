@@ -3010,7 +3010,7 @@ class Seg34CNView extends WatchUi.WatchFace {
                 value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month);
                 break;
             case 7: // WEEKDAY, YYYY-MM-DD
-                value = dayName(today.day_of_week) + ", " + today.year + "-" + today.month.format("%02d") + "-" + today.day.format("%02d");
+                value = dayName(today.day_of_week) + "  " + today.year + "-" + today.month.format("%02d") + "-" + today.day.format("%02d");
                 break;
             case 8: // WEEKDAY, MM/DD/YYYY
                 value = dayName(today.day_of_week) + ", " + today.month.format("%02d") + "/" + today.day.format("%02d") + "/" + today.year;
