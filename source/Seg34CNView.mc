@@ -159,24 +159,23 @@ class LunarCalendar {
 
     // 返回值: [农历年份, 农历月份, 农历日期, 是否闰月]
     private function getLunarDate(year as Number, month as Number, day as Number) as Array<Number> {
-        // 1. 基础边界防护（杜绝越界）
         if (year < START_YEAR || year > END_YEAR) {
             return [0, 0, 0, 0];
         }
         var leapSize = LEAP_MONTH_OFFSETS.size();
         var lunarSize = LUNAR_OFFSET_DAYS.size();
 
-        // 2. 计算目标日期相对START_YEAR-01-01的天数
+        // 计算目标日期相对START_YEAR-01-01的天数
         var targetDays = getDayCount(year, month, day);
         if (targetDays < LUNAR_OFFSET_DAYS[0] || targetDays > LUNAR_OFFSET_DAYS[lunarSize - 1] + 30) {
             return [0, 0, 0, 0];
         }
 
-        var baseMonthIdx = 0;
-        var leapCount = 0;   // 目标索引前的闰月总数
-        var isLeap = 0;     // 当前是否闰月（默认0）
-        // 第一步：遍历找目标索引 + 精准标记闰月
+        var baseMonthIdx = 0; // 农历月份索引
+        var leapCount = 0;    // 当前月份前的闰月总数
+        var isLeap = 0;       // 当前月是否闰月
 
+        // 找到目标日期的月份索引
         for(var i = 0; i < lunarSize; i++) {
             if (LUNAR_OFFSET_DAYS[i] > targetDays) {
                 baseMonthIdx = i - 1;
@@ -188,6 +187,7 @@ class LunarCalendar {
             return [0, 0, 0, 0];
         }   
 
+        // 计算当前月份前的闰月总数以及是否为闰月
         if (LEAP_MONTH_OFFSETS[0] <= baseMonthIdx) {
             for(var i = 0; i < leapSize; i++) {
                 if (LEAP_MONTH_OFFSETS[i] < baseMonthIdx) {
@@ -231,7 +231,7 @@ class LunarCalendar {
             }
         }
         
-        // 如果没有找到下一个节气（已到最后一个节气之后）
+        // 如果没有找到下一个节气
         return [0, ""];
     }
 }
