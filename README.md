@@ -1,0 +1,13 @@
+# Segment34.CN
+修改自Segment34 MkII表盘(https://github.com/ludw/Segment34mkII)，感谢原作者开源！添加了农历和二十四节气显示，顺便对设置菜单做了汉化，农历默认显示在时钟上面的第二行。由于汉字字体没有点阵风格，当显示农历时请将时钟上方的字体设为“线条”（默认值），以确保两行显示风格一致。
+
+![Screenshot of the watchface](screenshot.jpg "Screenshot")
+
+## Change log
+2026年3月24日 v1.3：
+1.修复了农历字体缺失的几个字符；
+2.同步更新代码至Segment34 MkII 4.6.2；
+2026年3月23日 v1.2：
+1.重写了农历算法，以适应老款设备；
+2.为AMOLED屏设计了大号的字体；
+3.在设置里面增加了农历的选项菜单；
