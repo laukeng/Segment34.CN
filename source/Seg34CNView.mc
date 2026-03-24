@@ -164,22 +164,22 @@ class LunarCalendar {
         }
         var leapSize = LEAP_MONTH_OFFSETS.size();
         var lunarSize = LUNAR_OFFSET_DAYS.size();
+        var baseMonthIdx = 0; // 农历月份索引
+        var leapCount = 0;    // 当前月份前的闰月总数
+        var isLeap = 0;       // 当前月是否闰月
 
         // 计算目标日期相对START_YEAR-01-01的天数
         var targetDays = getDayCount(year, month, day);
         if (targetDays < LUNAR_OFFSET_DAYS[0] || targetDays > LUNAR_OFFSET_DAYS[lunarSize - 1] + 30) {
             return [0, 0, 0, 0];
-        }
-
-        var baseMonthIdx = 0; // 农历月份索引
-        var leapCount = 0;    // 当前月份前的闰月总数
-        var isLeap = 0;       // 当前月是否闰月
-
-        // 找到目标日期的月份索引
-        for(var i = 0; i < lunarSize; i++) {
-            if (LUNAR_OFFSET_DAYS[i] > targetDays) {
-                baseMonthIdx = i - 1;
-                break;
+        } else if (targetDays >= LUNAR_OFFSET_DAYS[lunarSize - 1] && targetDays <= LUNAR_OFFSET_DAYS[lunarSize - 1] + 30) {
+            baseMonthIdx = lunarSize - 1;
+        } else {
+            for(var i = 0; i < lunarSize; i++) {
+                if (LUNAR_OFFSET_DAYS[i] > targetDays) {
+                    baseMonthIdx = i - 1;
+                    break;
+                }
             }
         }
 
