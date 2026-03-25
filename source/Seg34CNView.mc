@@ -281,7 +281,7 @@ class Seg34CNView extends WatchUi.WatchFace {
     hidden var fontLabel as WatchUi.FontResource?;
     hidden var fontTinyData as WatchUi.FontResource?;
     hidden var fontSmallData as WatchUi.FontResource?;
-    hidden var fontChineseLunar as WatchUi.FontResource?;
+    // hidden var fontChineseLunar as WatchUi.FontResource?;
     hidden var fontLargeData as WatchUi.FontResource?;
     hidden var fontAODData as WatchUi.FontResource?;
     hidden var fontBottomData as WatchUi.FontResource?;
@@ -315,7 +315,7 @@ class Seg34CNView extends WatchUi.WatchFace {
     hidden var lastUpdate as Number? = null;
     hidden var lastSlowUpdate as Number? = null;
     hidden var cachedValues as Dictionary = {};
-    hidden var cachedTempUnit as String = "C";
+    hidden var cachedTempUnit as String = "℃";
     hidden var cachedRunDist7Days as Number = 0;
     hidden var cachedBikeDist7Days as Number = 0;
     hidden var lastActivityDistUpdate as Number = 0;
@@ -532,7 +532,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.smol);
         loadSmallFont(Rez.Fonts.led_small, Rez.Fonts.led_small_readable, Rez.Fonts.led_small_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_16);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_16);
         fontLargeData = Application.loadResource(Rez.Fonts.led);
         fontBottomData = Application.loadResource(Rez.Fonts.led_small);
         fontLabel = Application.loadResource(Rez.Fonts.xsmol);
@@ -568,7 +568,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.smol);
         loadSmallFont(Rez.Fonts.led_small, Rez.Fonts.led_small_readable, Rez.Fonts.led_small_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_16);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_16);
         fontLargeData = Application.loadResource(Rez.Fonts.led);
         fontBottomData = fontLargeData;
         fontLabel = Application.loadResource(Rez.Fonts.xsmol);
@@ -603,7 +603,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.storre);
         loadSmallFont(Rez.Fonts.led_small, Rez.Fonts.led_small_readable, Rez.Fonts.led_small_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_16);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_16);
         fontLargeData = Application.loadResource(Rez.Fonts.led);
         fontBottomData = fontLargeData;
         fontLabel = Application.loadResource(Rez.Fonts.smol);
@@ -639,7 +639,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.storre);
         loadSmallFont(Rez.Fonts.led, Rez.Fonts.led_inbetween, Rez.Fonts.led_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
         fontLargeData = Application.loadResource(Rez.Fonts.led_big);
         fontBottomData = Application.loadResource(Rez.Fonts.led);
         fontLabel = Application.loadResource(Rez.Fonts.smol);
@@ -680,7 +680,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.led_small_lines);
         loadSmallFont(Rez.Fonts.led, Rez.Fonts.led_inbetween, Rez.Fonts.led_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
         fontLargeData = Application.loadResource(Rez.Fonts.led_big);
         fontBottomData = fontLargeData;
         fontLabel = Application.loadResource(Rez.Fonts.storre);
@@ -718,7 +718,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.led_small_lines);
         loadSmallFont(Rez.Fonts.led, Rez.Fonts.led_inbetween, Rez.Fonts.led_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
         fontLargeData = Application.loadResource(Rez.Fonts.led_big);
         fontBottomData = fontLargeData;
         fontLabel = Application.loadResource(Rez.Fonts.storre);
@@ -756,7 +756,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.led_small_lines);
         loadSmallFont(Rez.Fonts.led, Rez.Fonts.led_inbetween, Rez.Fonts.led_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
         fontLargeData = Application.loadResource(Rez.Fonts.led_big);
         fontBottomData = fontLargeData;
         fontLabel = Application.loadResource(Rez.Fonts.storre);
@@ -793,7 +793,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.led_small_lines);
         loadSmallFont(Rez.Fonts.led, Rez.Fonts.led_inbetween, Rez.Fonts.led_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
         fontLargeData = Application.loadResource(Rez.Fonts.led_big);
         fontBottomData = fontLargeData;
         fontLabel = Application.loadResource(Rez.Fonts.storre);
@@ -834,7 +834,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         }
         fontTinyData = Application.loadResource(Rez.Fonts.led_small_lines);
         loadSmallFont(Rez.Fonts.led, Rez.Fonts.led_inbetween, Rez.Fonts.led_lines);
-        fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
+        // fontChineseLunar = Application.loadResource(Rez.Fonts.chinese_lunar_24);
         fontLargeData = Application.loadResource(Rez.Fonts.led_big);
         fontBottomData = fontLargeData;
         fontLabel = Application.loadResource(Rez.Fonts.storre);
@@ -1136,11 +1136,12 @@ class Seg34CNView extends WatchUi.WatchFace {
         // Draw Lines above clock
         dc.setColor(themeColors[dataVal], Graphics.COLOR_TRANSPARENT);
         dc.drawText(centerX, yn2, fontSmallData, values[:dataAboveLine1], Graphics.TEXT_JUSTIFY_CENTER);
-        if(propWeatherLine2Shows == 99) {
-            dc.drawText(centerX, yn1, fontChineseLunar, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
-        } else {
-            dc.drawText(centerX, yn1, fontSmallData, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
-        }       
+        // if(propWeatherLine2Shows == 99) {
+        //     dc.drawText(centerX, yn1, fontChineseLunar, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
+        // } else {
+        //     dc.drawText(centerX, yn1, fontSmallData, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
+        // }       
+        dc.drawText(centerX, yn1, fontSmallData, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
 
         // Draw Clock
         if(propClockOutlineStyle != 5) {
@@ -1267,11 +1268,12 @@ class Seg34CNView extends WatchUi.WatchFace {
         // Draw Lines above clock (shifted up by one row)
         dc.setColor(themeColors[dataVal], Graphics.COLOR_TRANSPARENT);
         dc.drawText(centerX, yn2, fontSmallData, values[:dataAboveLine1], Graphics.TEXT_JUSTIFY_CENTER);
-        if(propWeatherLine2Shows == 99) {
-            dc.drawText(centerX, yn1, fontChineseLunar, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
-        } else {
-            dc.drawText(centerX, yn1, fontSmallData, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
-        }
+        // if(propWeatherLine2Shows == 99) {
+        //     dc.drawText(centerX, yn1, fontChineseLunar, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
+        // } else {
+        //     dc.drawText(centerX, yn1, fontSmallData, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
+        // }
+        dc.drawText(centerX, yn1, fontSmallData, values[:dataAboveLine2], Graphics.TEXT_JUSTIFY_CENTER);
 
         // Draw date line ABOVE clock (at yn0)
         dc.setColor(themeColors[date], Graphics.COLOR_TRANSPARENT);
@@ -2709,8 +2711,8 @@ class Seg34CNView extends WatchUi.WatchFace {
             val = joinFour(temp, uv, wind, "");
         } else if(complicationType == 70) { // Weather condition, Temperature
             var condition = getWeatherCondition(false);
-            var temp = getTemperature();
-            val = joinFour(condition, temp, "", "");
+            var temp = getHighLow();
+            val = condition + " " + temp;
         } else if(complicationType == 71) { // CGM Glucose + Trend
             val = getCgmReading();
         } else if(complicationType == 72) { // CGM Age (minutes)
@@ -3165,7 +3167,7 @@ class Seg34CNView extends WatchUi.WatchFace {
     hidden function getTempUnit() as String {
         var temp_unit_setting = System.getDeviceSettings().temperatureUnits;
         if((temp_unit_setting == System.UNIT_METRIC and propTempUnit == 0) or propTempUnit == 1) {
-            return "C";
+            return "℃";
         } else {
             return "F";
         }
@@ -3179,7 +3181,7 @@ class Seg34CNView extends WatchUi.WatchFace {
     }
 
     hidden function convertTemperature(temp as Numeric, unit as String) as Numeric {
-        if(unit.equals("C")) {
+        if(unit.equals("℃")) {
             return temp;
         } else {
             return ((temp * 9/5) + 32);
@@ -3280,7 +3282,7 @@ class Seg34CNView extends WatchUi.WatchFace {
             if(weatherCondition.highTemperature != null or weatherCondition.lowTemperature != null) {
                 var high = convertTemperature(weatherCondition.highTemperature, cachedTempUnit);
                 var low = convertTemperature(weatherCondition.lowTemperature, cachedTempUnit);
-                ret = formatTemperature(high) + "/" + formatTemperature(low);
+                ret = low.format("%d") + "~" + formatTemperature(high);
             }
         }
         return ret;

@@ -25,7 +25,7 @@
     <property id="alwaysShowSeconds" type="boolean">false</property>
     <property id="updateFreq" type="number">5</property>
     <property id="batteryVariant" type="number">1</property>
-    <property id="weatherLine1Shows" type="number">56</property>
+    <property id="weatherLine1Shows" type="number">70</property>
     <property id="weatherLine2Shows" type="number">99</property>
     <property id="fieldLayout" type="number">0</property>
     <property id="leftValueShows" type="number">4</property>
