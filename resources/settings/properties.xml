@@ -30,7 +30,7 @@
     <property id="fieldLayout" type="number">0</property>
     <property id="leftValueShows" type="number">4</property>
     <property id="middleValueShows" type="number">10</property>
-    <property id="rightValueShows" type="number">29</property>
+    <property id="rightValueShows" type="number">11</property>
     <property id="fourthValueShows" type="number">-2</property>
     <property id="bottomFieldShows" type="number">17</property>
     <property id="bottomField2Shows" type="number">-2</property>
@@ -52,7 +52,7 @@
     <property id="tzName1" type="string">UTC TIME</property>
     <property id="tzName2" type="string">TZ2</property>
     <property id="icon1" type="number">1</property>
-    <property id="icon2" type="number">2</property>
+    <property id="icon2" type="number">4</property>
     <property id="weekOffset" type="number">0</property>
     <property id="pressToOpenTop" type="number">0</property>
     <property id="pressToOpenMiddle" type="number">0</property>
