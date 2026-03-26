@@ -4,7 +4,7 @@
 <img src="screenshot.jpg" alt="Screenshot of the watchface" width="400">
 
 ## 更新日志 
-2026年3月26日 v2.0.1版：  
+2026年3月27日 v2.1版：  
 时钟上面两行和下面都可以设置为显示农历；  
 
 2026年3月26日 v2.0版：  
