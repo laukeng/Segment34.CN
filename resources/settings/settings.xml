@@ -258,6 +258,7 @@
         <settingConfig type="list">
             <listEntry value="-2">@Strings.settings_hidden</listEntry>
             <listEntry value="-1">@Strings.settings_date</listEntry>
+            <listEntry value="99">@Strings.settings_lunar_calendar</listEntry>
             <listEntry value="45">@Strings.settings_temperature_wind_feels</listEntry>
             <listEntry value="46">@Strings.settings_temperature_wind</listEntry>
             <listEntry value="47">@Strings.settings_temperature_wind_humidity</listEntry>
@@ -339,6 +340,7 @@
         <settingConfig type="list">
             <listEntry value="-2">@Strings.settings_hidden</listEntry>
             <listEntry value="-1">@Strings.settings_date</listEntry>
+            <listEntry value="99">@Strings.settings_lunar_calendar</listEntry>
             <listEntry value="45">@Strings.settings_temperature_wind_feels</listEntry>
             <listEntry value="46">@Strings.settings_temperature_wind</listEntry>
             <listEntry value="47">@Strings.settings_temperature_wind_humidity</listEntry>

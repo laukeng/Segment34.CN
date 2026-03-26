@@ -245,7 +245,7 @@
     <string id="settings_filled_numbers_with_outline" scope="settings">填充数字带轮廓，AOD相同</string>
     <string id="settings_filled_numbers_with_outline_aod" scope="settings">填充数字带轮廓，仅AOD显示轮廓</string>
     <string id="settings_just_outline" scope="settings">仅显示轮廓</string>
-    <string id="settings_filled_numbers_plain" scope="settings">填充数字无轮廓，AOD无渐变（更适合 redshift）</string>
+    <string id="settings_filled_numbers_plain" scope="settings">填充数字无轮廓，AOD无渐变（更适合红移）</string>
     <string id="settings_clock_gradient_overlay" scope="settings">时钟渐变叠加</string>
     <string id="settings_gradient_clock_and_aod" scope="settings">时钟和AOD均使用渐变（默认）</string>
     <string id="settings_gradient_aod_only" scope="settings">时钟无渐变，AOD使用渐变</string>
@@ -489,7 +489,7 @@
     <string id="settings_cgm_glucose_trend" scope="settings">CGM血糖 + 趋势</string>
     <string id="settings_cgm_age" scope="settings">CGM传感器使用时间（分钟）</string>
     <string id="settings_lunar_calendar" scope="settings">农历</string>
-    <string id="settings_aod_style" scope="settings">始终显示模式</string>
+    <string id="settings_aod_style" scope="settings">始终显示模式（AOD）</string>
     <string id="settings_aod_disabled" scope="settings">禁用（也禁用手表设置以省电）</string>
     <string id="settings_aod_clock_two_fields" scope="settings">时钟 + 两个字段（定义在下方）</string>
     <string id="settings_aod_full_watchface" scope="settings">全表盘（最耗电）</string>

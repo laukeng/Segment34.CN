@@ -33,7 +33,4 @@
     <font id="xsmol" filename="xsmol.fnt" antialias="false" />
     <font id="moon" filename="moon.fnt" antialias="true" />
     <font id="storre" filename="storre.fnt" antialias="false" />
-
-    <font id="chinese_lunar_16" filename="chinese_lunar_16.fnt" antialias="false" />
-    <font id="chinese_lunar_24" filename="chinese_lunar_24.fnt" antialias="false" />
 </fonts>
