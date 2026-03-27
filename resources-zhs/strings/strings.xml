@@ -204,8 +204,8 @@
 
     <!-- Settings strings with scope="settings" -->
     <string id="settings_color_theme" scope="settings">色彩主题</string>
-    <string id="settings_yellow_on_turquoise" scope="settings">黄底青蓝</string>
-    <string id="settings_yellow_on_blue" scope="settings">黄底蓝</string>
+    <string id="settings_yellow_on_turquoise" scope="settings">黄字青蓝底</string>
+    <string id="settings_yellow_on_blue" scope="settings">黄字蓝底</string> 
     <string id="settings_hot_pink" scope="settings">热粉色</string>
     <string id="settings_blue" scope="settings">蓝色</string>
     <string id="settings_blueish_green" scope="settings">蓝绿色</string>
@@ -217,17 +217,17 @@
     <string id="settings_peachy_orange" scope="settings">桃橙色</string>
     <string id="settings_red" scope="settings">红色</string>
     <string id="settings_purple" scope="settings">紫色</string>
-    <string id="settings_white_on_turquoise" scope="settings">白底青蓝</string>
-    <string id="settings_white_on_red" scope="settings">白底红</string>
-    <string id="settings_white_on_blue" scope="settings">白底蓝</string>
-    <string id="settings_white_on_orange" scope="settings">白底橙</string>
-    <string id="settings_white_on_black" scope="settings">白底黑</string>
-    <string id="settings_black_on_white" scope="settings">黑底白（AMOLED不推荐）</string>
-    <string id="settings_red_on_white" scope="settings">红底白（AMOLED不推荐）</string>
-    <string id="settings_blue_on_white" scope="settings">蓝底白（AMOLED不推荐）</string>
-    <string id="settings_green_on_white" scope="settings">绿底白（AMOLED不推荐）</string>
-    <string id="settings_orange_on_white" scope="settings">橙底白（AMOLED不推荐）</string>
-    <string id="settings_purple_on_white" scope="settings">紫底白（AMOLED不推荐）</string>
+    <string id="settings_white_on_turquoise" scope="settings">白字青蓝底</string>
+    <string id="settings_white_on_red" scope="settings">白字红底</string>
+    <string id="settings_white_on_blue" scope="settings">白字蓝底</string>
+    <string id="settings_white_on_orange" scope="settings">白字橙底</string>
+    <string id="settings_white_on_black" scope="settings">白字黑底</string>
+    <string id="settings_black_on_white" scope="settings">黑字白底（AMOLED不推荐）</string>
+    <string id="settings_red_on_white" scope="settings">红字白底（AMOLED不推荐）</string>
+    <string id="settings_blue_on_white" scope="settings">蓝字白底（AMOLED不推荐）</string>
+    <string id="settings_green_on_white" scope="settings">绿字白底（AMOLED不推荐）</string>
+    <string id="settings_orange_on_white" scope="settings">橙字白底（AMOLED不推荐）</string>
+    <string id="settings_purple_on_white" scope="settings">紫字白底（AMOLED不推荐）</string>
     <string id="settings_custom_colors" scope="settings">自定义颜色，详见FAQ 1.2.0</string>
     <string id="settings_custom_colors_faq" scope="settings">自定义颜色，详见FAQ</string>
     <string id="settings_night_color_theme" scope="settings">夜间色彩主题</string>
@@ -289,8 +289,8 @@
     <string id="settings_body_battery" scope="settings">身体电量</string>
     <string id="settings_sunrise_time" scope="settings">日出时间</string>
     <string id="settings_sunset_time" scope="settings">日落时间</string>
-    <string id="settings_next_sun_event" scope="settings">下一个太阳事件（日落/日出）时间</string>
-    <string id="settings_hrs_next_sun_event" scope="settings">距离下一个太阳事件（日落/日出）的小时数</string>
+    <string id="settings_next_sun_event" scope="settings">下一个（日落/日出）时间</string>
+    <string id="settings_hrs_next_sun_event" scope="settings">距离下一个（日落/日出）的小时数</string>
     <string id="settings_resting_heart_rate" scope="settings">静息心率</string>
     <string id="settings_alternative_timezone_1" scope="settings">备用时区1</string>
     <string id="settings_alternative_timezone_2" scope="settings">备用时区2</string>
@@ -302,7 +302,7 @@
     <string id="settings_battery_percentage" scope="settings">电池百分比</string>
     <string id="settings_battery_days_remaining" scope="settings">电池剩余天数</string>
     <string id="settings_notification_count" scope="settings">通知数量</string>
-    <string id="settings_solar_intensity" scope="settings">太阳强度</string>
+    <string id="settings_solar_intensity" scope="settings">光照强度</string>
     <string id="settings_sensor_temperature" scope="settings">传感器温度</string>
     <string id="settings_alarms_count" scope="settings">闹钟（数量）</string>
     <string id="settings_weather_daily_high" scope="settings">天气：每日最高温度</string>
@@ -433,7 +433,7 @@
     <string id="settings_yyyy_mm_dd" scope="settings">年-月-日</string>
     <string id="settings_mm_dd_yyyy" scope="settings">月/日/年</string>
     <string id="settings_dd_mm_yyyy" scope="settings">日.月.年</string>
-    <string id="settings_weekday_yyyy_mm_dd" scope="settings">星期，年-月-日</string>
+    <string id="settings_weekday_yyyy_mm_dd" scope="settings">星期 年-月-日</string>
     <string id="settings_weekday_mm_dd_yyyy" scope="settings">星期，月/日/年</string>
     <string id="settings_weekday_dd_mm_yyyy" scope="settings">星期，日.月.年</string>
     <string id="settings_weekday_dd_month_week" scope="settings">星期，日 月（周）</string>
