@@ -2738,7 +2738,7 @@ class Seg34CNView extends WatchUi.WatchFace {
 
         switch(propDateFormat) {
             case 0: // Default: THU, 14 MAR 2024
-                value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " " + today.year;
+                value = dayNameEN(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " " + today.year;
                 break;
             case 1: // ISO: 2024-03-14
                 value = today.year + "-" + today.month.format("%02d") + "-" + today.day.format("%02d");
@@ -2746,26 +2746,26 @@ class Seg34CNView extends WatchUi.WatchFace {
             case 2: // US: 03/14/2024
                 value = today.month.format("%02d") + "/" + today.day.format("%02d") + "/" + today.year;
                 break;
-            case 3: // EU: 14.03.2024
-                value = today.day.format("%02d") + "." + today.month.format("%02d") + "." + today.year;
+            case 3: // YYYY-MM-DD WEEKDAY
+                value = today.year + "-" + today.month.format("%02d") + "-" + today.day.format("%02d") + " " + dayName(today.day_of_week);
                 break;
             case 4: // THU, 14 MAR (Week number)
-                value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " (W" + isoWeekNumber(today.year, today.month, today.day) + ")";
+                value = dayNameEN(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " (W" + isoWeekNumber(today.year, today.month, today.day) + ")";
                 break;
             case 5: // THU, 14 MAR 2024 (Week number)
-                value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " " + today.year + " (W" + isoWeekNumber(today.year, today.month, today.day) + ")";
+                value = dayNameEN(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " " + today.year + " (W" + isoWeekNumber(today.year, today.month, today.day) + ")";
                 break;
             case 6: // WEEKDAY, DD MONTH
-                value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month);
+                value = dayNameEN(today.day_of_week) + ", " + today.day + " " + monthName(today.month);
                 break;
-            case 7: // WEEKDAY, YYYY-MM-DD
+            case 7: // WEEKDAY YYYY-MM-DD
                 value = dayName(today.day_of_week) + "  " + today.year + "-" + today.month.format("%02d") + "-" + today.day.format("%02d");
                 break;
-            case 8: // WEEKDAY, MM/DD/YYYY
-                value = dayName(today.day_of_week) + ", " + today.month.format("%02d") + "/" + today.day.format("%02d") + "/" + today.year;
+            case 8: // WEEKDAY MM/DD/YYYY
+                value = dayName(today.day_of_week) + " " + today.month.format("%02d") + "/" + today.day.format("%02d") + "/" + today.year;
                 break;
-            case 9: // WEEKDAY, DD.MM.YYYY
-                value = dayName(today.day_of_week) + ", " + today.day.format("%02d") + "." + today.month.format("%02d") + "." + today.year;
+            case 9: // WEEKDAY DD.MM.YYYY
+                value = dayName(today.day_of_week) + " " + today.day.format("%02d") + "." + today.month.format("%02d") + "." + today.year;
                 break;
         }
 
@@ -3312,6 +3312,14 @@ class Seg34CNView extends WatchUi.WatchFace {
                      Rez.Strings.DAY_OF_WEEK_WED, Rez.Strings.DAY_OF_WEEK_THU, Rez.Strings.DAY_OF_WEEK_FRI,
                      Rez.Strings.DAY_OF_WEEK_SAT];
         cachedDayName = Application.loadResource(names[day_of_week - 1]);
+        return cachedDayName;
+    }
+
+    hidden function dayNameEN(day_of_week as Number) as String {
+        if (cachedDayOfWeek == day_of_week) { return cachedDayName; }
+        cachedDayOfWeek = day_of_week;
+        var names = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];   
+        cachedDayName = names[day_of_week - 1];
         return cachedDayName;
     }
 

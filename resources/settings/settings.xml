@@ -894,7 +894,7 @@
             <listEntry value="26">@Strings.settings_training_status_2</listEntry>
             <listEntry value="27">@Strings.settings_race_predictor_5k</listEntry>
             <listEntry value="35">@Strings.settings_pulse_ox_2</listEntry>
-            <listEntry value="37">@Strings.settings_solar_input</listEntry>
+            <listEntry value="37">@Strings.settings_solar_intensity</listEntry>
         </settingConfig>
     </setting>
 
@@ -922,7 +922,7 @@
             <listEntry value="26">@Strings.settings_training_status_2</listEntry>
             <listEntry value="27">@Strings.settings_race_predictor_5k</listEntry>
             <listEntry value="35">@Strings.settings_pulse_ox_2</listEntry>
-            <listEntry value="37">@Strings.settings_solar_input</listEntry>
+            <listEntry value="37">@Strings.settings_solar_intensity</listEntry>
         </settingConfig>
     </setting>
 
@@ -950,7 +950,7 @@
             <listEntry value="26">@Strings.settings_training_status_2</listEntry>
             <listEntry value="27">@Strings.settings_race_predictor_5k</listEntry>
             <listEntry value="35">@Strings.settings_pulse_ox_2</listEntry>
-            <listEntry value="37">@Strings.settings_solar_input</listEntry>
+            <listEntry value="37">@Strings.settings_solar_intensity</listEntry>
         </settingConfig>
     </setting>
 
@@ -978,7 +978,7 @@
             <listEntry value="26">@Strings.settings_training_status_2</listEntry>
             <listEntry value="27">@Strings.settings_race_predictor_5k</listEntry>
             <listEntry value="35">@Strings.settings_pulse_ox_2</listEntry>
-            <listEntry value="37">@Strings.settings_solar_input</listEntry>
+            <listEntry value="37">@Strings.settings_solar_intensity</listEntry>
         </settingConfig>
     </setting>
 
@@ -1006,7 +1006,7 @@
             <listEntry value="26">@Strings.settings_training_status_2</listEntry>
             <listEntry value="27">@Strings.settings_race_predictor_5k</listEntry>
             <listEntry value="35">@Strings.settings_pulse_ox_2</listEntry>
-            <listEntry value="37">@Strings.settings_solar_input</listEntry>
+            <listEntry value="37">@Strings.settings_solar_intensity</listEntry>
         </settingConfig>
     </setting>
 
@@ -1023,7 +1023,7 @@
             <listEntry value="6">@Strings.settings_weekday_dd_month</listEntry>
             <listEntry value="1">@Strings.settings_yyyy_mm_dd</listEntry>
             <listEntry value="2">@Strings.settings_mm_dd_yyyy</listEntry>
-            <listEntry value="3">@Strings.settings_dd_mm_yyyy</listEntry>
+            <listEntry value="3">@Strings.settings_yyyy_mm_dd_weekday</listEntry>
             <listEntry value="7">@Strings.settings_weekday_yyyy_mm_dd</listEntry>
             <listEntry value="8">@Strings.settings_weekday_mm_dd_yyyy</listEntry>
             <listEntry value="9">@Strings.settings_weekday_dd_mm_yyyy</listEntry>

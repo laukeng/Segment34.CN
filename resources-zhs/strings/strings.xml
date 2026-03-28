@@ -204,7 +204,7 @@
 
     <!-- Settings strings with scope="settings" -->
     <string id="settings_color_theme" scope="settings">色彩主题</string>
-    <string id="settings_yellow_on_turquoise" scope="settings">黄字青蓝底</string>
+    <string id="settings_yellow_on_turquoise" scope="settings">黄加青蓝底</string>
     <string id="settings_yellow_on_blue" scope="settings">黄字蓝底</string> 
     <string id="settings_hot_pink" scope="settings">热粉色</string>
     <string id="settings_blue" scope="settings">蓝色</string>
@@ -324,26 +324,26 @@
     <string id="settings_stress_history" scope="settings">压力历史</string>
     <string id="settings_stress_rest_orange_blue" scope="settings">压力/休息（橙/蓝）</string>
     <string id="settings_temperature_sensor_history" scope="settings">温度传感器历史</string>
-    <string id="settings_small_font_variant" scope="settings">小点阵字体变体：</string>
-    <string id="settings_dots" scope="settings">点</string>
-    <string id="settings_blended" scope="settings">混合</string>
-    <string id="settings_lines_highest_contrast" scope="settings">线条（最高对比度）</string>
+    <string id="settings_small_font_variant" scope="settings">小点阵字体：</string>
+    <string id="settings_dots" scope="settings">点阵（不支持中文）</string>
+    <string id="settings_blended" scope="settings">混合（不支持中文）</string>
+    <string id="settings_lines_highest_contrast" scope="settings">线条（支持中文显示）</string>
     <string id="settings_line_1_above_clock" scope="settings">时钟上方第一行显示：</string>
     <string id="settings_date" scope="settings">日期</string>
     <string id="settings_temperature_wind_feels" scope="settings">温度，风速，体感</string>
     <string id="settings_temperature_wind" scope="settings">温度，风速</string>
     <string id="settings_temperature_wind_humidity" scope="settings">温度，风速，湿度</string>
-    <string id="settings_temperature_wind_high_low" scope="settings">温度，风速，最高/最低</string>
+    <string id="settings_temperature_wind_high_low" scope="settings">温度，风速，最低~最高温度</string>
     <string id="settings_temperature_wind_precipitation" scope="settings">温度，风速，降水概率</string>
     <string id="settings_temperature_wind_humidity_precipitation" scope="settings">温度，风速，湿度，降水概率</string>
-    <string id="settings_temperature_humidity_high_low" scope="settings">温度，湿度，最高/最低</string>
-    <string id="settings_temperature_uv_high_low" scope="settings">温度，紫外线指数，最高/最低</string>
-    <string id="settings_temperature_feels_high_low" scope="settings">温度，体感，最高/最低</string>
-    <string id="settings_temperature_precipitation_high_low" scope="settings">温度，降水概率，最高/最低</string>
+    <string id="settings_temperature_humidity_high_low" scope="settings">温度，湿度，最低~最高温度</string>
+    <string id="settings_temperature_uv_high_low" scope="settings">温度，紫外线指数，最低~最高温度</string>
+    <string id="settings_temperature_feels_high_low" scope="settings">温度，体感，最低~最高温度</string>
+    <string id="settings_temperature_precipitation_high_low" scope="settings">温度，降水概率，最低~最高温度</string>
     <string id="settings_weather_conditions_precipitation" scope="settings">天气状况，降水概率</string>
     <string id="settings_weather_conditions" scope="settings">天气状况</string>
-    <string id="settings_weather_conditions_temperature" scope="settings">天气状况，温度</string>
-    <string id="settings_weather_conditions_feelslike" scope="settings">天气状况，体感</string>
+    <string id="settings_weather_conditions_temperature" scope="settings">天气状况，最低~最高温度</string>
+    <string id="settings_weather_conditions_feelslike" scope="settings">天气状况，体感温度</string>
     <string id="settings_daily_high_temperature" scope="settings">每日最高温度</string>
     <string id="settings_daily_low_temperature" scope="settings">每日最低温度</string>
     <string id="settings_temperature" scope="settings">温度</string>
@@ -414,7 +414,6 @@
     <string id="settings_training_status_2" scope="settings">训练状态</string>
     <string id="settings_race_predictor_5k" scope="settings">5公里比赛预测</string>
     <string id="settings_pulse_ox_2" scope="settings">血氧</string>
-    <string id="settings_solar_input" scope="settings">太阳能输入</string>
     <string id="settings_press_middle_clock" scope="settings">按中间（时钟）打开：</string>
     <string id="settings_press_bottom_left" scope="settings">按左下角打开：</string>
     <string id="settings_press_bottom_center" scope="settings">按底部中央打开：</string>
@@ -431,7 +430,7 @@
     <string id="settings_weekday_dd_month" scope="settings">星期，日 月</string>
     <string id="settings_yyyy_mm_dd" scope="settings">年-月-日</string>
     <string id="settings_mm_dd_yyyy" scope="settings">月/日/年</string>
-    <string id="settings_dd_mm_yyyy" scope="settings">日.月.年</string>
+    <string id="settings_yyyy_mm_dd_weekday" scope="settings">年-月-日 星期</string>
     <string id="settings_weekday_yyyy_mm_dd" scope="settings">星期 年-月-日</string>
     <string id="settings_weekday_mm_dd_yyyy" scope="settings">星期，月/日/年</string>
     <string id="settings_weekday_dd_mm_yyyy" scope="settings">星期，日.月.年</string>
