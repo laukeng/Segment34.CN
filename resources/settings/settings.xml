@@ -353,7 +353,6 @@
             <listEntry value="69">@Strings.settings_temperature_uv_wind</listEntry>
             <listEntry value="67">@Strings.settings_temperature_feels_high_low</listEntry>
             <listEntry value="52">@Strings.settings_temperature_precipitation_high_low</listEntry>
-            <listEntry value="20">@Strings.settings_weather_conditions_precipitation_chance</listEntry>
             <listEntry value="50">@Strings.settings_weather_conditions</listEntry>
             <listEntry value="70">@Strings.settings_weather_conditions_temperature</listEntry>
             <listEntry value="17">@Strings.settings_steps_day</listEntry>
