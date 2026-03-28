@@ -313,7 +313,6 @@
     <string id="settings_weather_humidity" scope="settings">Weather: Humidity</string>
     <string id="settings_weather_uv_index" scope="settings">Weather: UV index</string>
     <string id="settings_next_calendar_event" scope="settings">Next calendar event time</string>
-    <string id="settings_next_calendar_event_time" scope="settings">Next calendar event time</string>
     <string id="settings_top_right_small" scope="settings">Top right small data field:</string>
     <string id="settings_histogram_shows" scope="settings">Histogram shows (must be enabled in Top Part shows)</string>
     <string id="settings_body_battery_history" scope="settings">Body battery history</string>

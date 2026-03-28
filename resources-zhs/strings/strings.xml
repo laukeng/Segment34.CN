@@ -204,7 +204,7 @@
 
     <!-- Settings strings with scope="settings" -->
     <string id="settings_color_theme" scope="settings">色彩主题</string>
-    <string id="settings_yellow_on_turquoise" scope="settings">黄加青蓝底</string>
+    <string id="settings_yellow_on_turquoise" scope="settings">黄字青蓝底</string>
     <string id="settings_yellow_on_blue" scope="settings">黄字蓝底</string> 
     <string id="settings_hot_pink" scope="settings">热粉色</string>
     <string id="settings_blue" scope="settings">蓝色</string>
@@ -282,7 +282,7 @@
     <string id="settings_heart_rate" scope="settings">心率</string>
     <string id="settings_pulse_ox" scope="settings">血氧</string>
     <string id="settings_calories_kcal_day" scope="settings">每日卡路里（千卡）</string>
-    <string id="settings_active_calories_kcal_day" scope="settings">每日活跃卡路里（千卡）</string>
+    <string id="settings_active_calories_kcal_day" scope="settings">每日活动卡路里（千卡）</string>
     <string id="settings_altitude_m" scope="settings">海拔（米）</string>
     <string id="settings_altitude_ft" scope="settings">海拔（英尺）</string>
     <string id="settings_stress_score" scope="settings">压力分数</string>
@@ -294,8 +294,8 @@
     <string id="settings_resting_heart_rate" scope="settings">静息心率</string>
     <string id="settings_alternative_timezone_1" scope="settings">备用时区1</string>
     <string id="settings_alternative_timezone_2" scope="settings">备用时区2</string>
-    <string id="settings_barometric_pressure_raw" scope="settings">气压，原始</string>
-    <string id="settings_barometric_pressure_sea" scope="settings">气压，海平面</string>
+    <string id="settings_barometric_pressure_raw" scope="settings">气压（原始）</string>
+    <string id="settings_barometric_pressure_sea" scope="settings">气压（海平面）</string>
     <string id="settings_weight_kg" scope="settings">体重（公斤）</string>
     <string id="settings_weight_lbs" scope="settings">体重（磅）</string>
     <string id="settings_week_number" scope="settings">周数</string>
@@ -313,7 +313,6 @@
     <string id="settings_weather_humidity" scope="settings">天气：湿度</string>
     <string id="settings_weather_uv_index" scope="settings">天气：紫外线指数</string>
     <string id="settings_next_calendar_event" scope="settings">下一个日历事件时间</string>
-    <string id="settings_next_calendar_event_time" scope="settings">下一个日历事件时间</string>
     <string id="settings_top_right_small" scope="settings">右上角小数据字段：</string>
     <string id="settings_histogram_shows" scope="settings">直方图显示（必须在顶部显示中启用）</string>
     <string id="settings_body_battery_history" scope="settings">身体电量历史</string>
@@ -351,7 +350,7 @@
     <string id="settings_steps_day" scope="settings">每日步数</string>
     <string id="settings_wheelchair_pushes_day" scope="settings">每日轮椅推动次数</string>
     <string id="settings_calories_kcal_day_2" scope="settings">每日卡路里（千卡）</string>
-    <string id="settings_active_total_calories" scope="settings">每日活跃/总卡路里（千卡）</string>
+    <string id="settings_active_total_calories" scope="settings">每日活动/总卡路里（千卡）</string>
     <string id="settings_altitude_m_2" scope="settings">海拔（米）</string>
     <string id="settings_altitude_ft_2" scope="settings">海拔（英尺）</string>
     <string id="settings_training_status" scope="settings">训练状态</string>
