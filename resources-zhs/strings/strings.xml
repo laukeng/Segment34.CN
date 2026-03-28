@@ -265,8 +265,8 @@
     <string id="settings_histogram_graph" scope="settings">直方图（最近2小时数据）</string>
     <string id="settings_top_left_small" scope="settings">左上角小数据字段：</string>
     <string id="settings_hidden" scope="settings">隐藏</string>
-    <string id="settings_active_min_week" scope="settings">每周活跃分钟数</string>
-    <string id="settings_active_min_day" scope="settings">每日活跃分钟数</string>
+    <string id="settings_active_min_week" scope="settings">每周活动分钟数</string>
+    <string id="settings_active_min_day" scope="settings">每日活动分钟数</string>
     <string id="settings_distance_day" scope="settings">每日距离</string>
     <string id="settings_run_distance_week" scope="settings">每周跑步距离</string>
     <string id="settings_run_distance_7_days" scope="settings">过去7天跑步距离</string>
@@ -479,7 +479,7 @@
     <string id="settings_right_bar_shows" scope="settings">右侧条形显示</string>
     <string id="settings_step_goal_progress" scope="settings">步数目标进度</string>
     <string id="settings_floor_climb_progress" scope="settings">爬楼进度</string>
-    <string id="settings_act_min_progress" scope="settings">活跃分钟目标，每周进度</string>
+    <string id="settings_act_min_progress" scope="settings">活动分钟目标，每周进度</string>
     <string id="settings_text_alignment_bottom_labels" scope="settings">底部字段标签的文本对齐：</string>
     <string id="settings_temperature_uv_precipitation" scope="settings">温度，紫外线指数，降水概率</string>
     <string id="settings_temperature_uv_wind" scope="settings">温度，紫外线指数，风速</string>
