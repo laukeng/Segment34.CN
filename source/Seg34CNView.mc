@@ -151,7 +151,7 @@ class Seg34CNView extends WatchUi.WatchFace {
     hidden var propSunsetFieldShows as Number = 40;
     hidden var propWeatherLine1Shows as Number = 70;
     hidden var propWeatherLine2Shows as Number = 99;
-    hidden var propDateFormat as Number = 7;
+    hidden var propDateFormat as Number = 3;
     hidden var propNotificationCountShows as Number = 36;
     hidden var propTzOffset1 as Number = 0;
     hidden var propTzOffset2 as Number = 0;
