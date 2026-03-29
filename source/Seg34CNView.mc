@@ -1123,11 +1123,11 @@ class Seg34CNView extends WatchUi.WatchFace {
             var y1 = baseY + halfClockHeight + marginY;
             dc.setColor(themeColors[dateDim], Graphics.COLOR_TRANSPARENT);
             if(propAodAlignment == 0) {
-                dc.drawText(baseX - halfClockWidth + textSideAdj - (now.min % 3), y1, fontAODData, values[:dataAODLeft], Graphics.TEXT_JUSTIFY_LEFT);
+                dc.drawText(baseX - halfClockWidth + textSideAdj - (now.min % 3), y1, fontSmallData, values[:dataAODLeft], Graphics.TEXT_JUSTIFY_LEFT);
             } else {
-                dc.drawText(baseX - (now.min % 3), y1, fontAODData, values[:dataAODLeft], Graphics.TEXT_JUSTIFY_CENTER);
+                dc.drawText(baseX - (now.min % 3), y1, fontSmallData, values[:dataAODLeft], Graphics.TEXT_JUSTIFY_CENTER);
             }
-            dc.drawText(baseX + halfClockWidth - textSideAdj - 2 - (now.min % 3), y1, fontAODData, values[:dataAODRight], Graphics.TEXT_JUSTIFY_RIGHT);
+            dc.drawText(baseX + halfClockWidth - textSideAdj - 2 - (now.min % 3), y1, fontSmallData, values[:dataAODRight], Graphics.TEXT_JUSTIFY_RIGHT);
         }
     }
 
