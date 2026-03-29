@@ -159,7 +159,7 @@
     <string id="LABEL_BATTD_2">BATT DAYS</string>
     <string id="LABEL_BATTD_3">BATTERY DAYS</string>
     <string id="LABEL_NOTIFS_1">NOTIFS</string>
-    <string id="LABEL_NOTIFS_3">NOTIFS</string>
+    <string id="LABEL_NOTIFS_3">NOTIFICATIONS</string>
     <string id="LABEL_SUN_1">SUN</string>
     <string id="LABEL_SUNINT_2">SUN INT</string>
     <string id="LABEL_SUNINT_3">SUN INTENSITY</string>
@@ -177,7 +177,7 @@
     <string id="LABEL_LOW_2">DAILY LOW</string>
     <string id="LABEL_TEMP_3">TEMPERATURE</string>
     <string id="LABEL_PRECIP_1">PRECIP</string>
-    <string id="LABEL_PRECIP_3">PRECIP</string>
+    <string id="LABEL_PRECIP_3">PRECIPITATION</string>
     <string id="LABEL_NEXTSUN_1">SUN</string>
     <string id="LABEL_NEXTSUN_2">NEXT SUN</string>
     <string id="LABEL_NEXTSUN_3">NEXT SUN EVNT</string>
@@ -349,10 +349,10 @@
     <string id="settings_chance_of_precipitation" scope="settings">降水概率</string>
     <string id="settings_steps_day" scope="settings">每日步数</string>
     <string id="settings_wheelchair_pushes_day" scope="settings">每日轮椅推动次数</string>
-    <string id="settings_calories_kcal_day_2" scope="settings">每日卡路里（千卡）</string>
+
     <string id="settings_active_total_calories" scope="settings">每日活动/总卡路里（千卡）</string>
-    <string id="settings_altitude_m_2" scope="settings">海拔（米）</string>
-    <string id="settings_altitude_ft_2" scope="settings">海拔（英尺）</string>
+
+
     <string id="settings_training_status" scope="settings">训练状态</string>
     <string id="settings_military_date_time" scope="settings">军事日期时间组（UTC）</string>
     <string id="settings_current_location_lat_long" scope="settings">当前位置（十进制度数经纬度）</string>
@@ -398,21 +398,20 @@
     <string id="settings_calories" scope="settings">卡路里</string>
     <string id="settings_floors_climbed" scope="settings">爬楼层数</string>
     <string id="settings_intensity_minutes" scope="settings">高强度分钟数</string>
-    <string id="settings_date_2" scope="settings">日期</string>
+
     <string id="settings_weather" scope="settings">天气</string>
     <string id="settings_calendar" scope="settings">日历</string>
     <string id="settings_sunrise" scope="settings">日出</string>
     <string id="settings_altitude" scope="settings">海拔</string>
     <string id="settings_notifications" scope="settings">通知</string>
-    <string id="settings_heart_rate_2" scope="settings">心率</string>
+
     <string id="settings_weekly_run_distance" scope="settings">每周跑步距离</string>
     <string id="settings_weekly_bike_distance" scope="settings">每周骑行距离</string>
     <string id="settings_recovery_time" scope="settings">恢复时间</string>
     <string id="settings_stress" scope="settings">压力</string>
-    <string id="settings_body_battery_2" scope="settings">身体电量</string>
-    <string id="settings_training_status_2" scope="settings">训练状态</string>
+
     <string id="settings_race_predictor_5k" scope="settings">5公里比赛预测</string>
-    <string id="settings_pulse_ox_2" scope="settings">血氧</string>
+
     <string id="settings_press_middle_clock" scope="settings">按中间（时钟）打开：</string>
     <string id="settings_press_bottom_left" scope="settings">按左下角打开：</string>
     <string id="settings_press_bottom_center" scope="settings">按底部中央打开：</string>

@@ -159,7 +159,7 @@
     <string id="LABEL_BATTD_2">BATT DAYS</string>
     <string id="LABEL_BATTD_3">BATTERY DAYS</string>
     <string id="LABEL_NOTIFS_1">NOTIFS</string>
-    <string id="LABEL_NOTIFS_3">NOTIFS</string>
+    <string id="LABEL_NOTIFS_3">NOTIFICATIONS</string>
     <string id="LABEL_SUN_1">SUN</string>
     <string id="LABEL_SUNINT_2">SUN INT</string>
     <string id="LABEL_SUNINT_3">SUN INTENSITY</string>
@@ -177,7 +177,7 @@
     <string id="LABEL_LOW_2">DAILY LOW</string>
     <string id="LABEL_TEMP_3">TEMPERATURE</string>
     <string id="LABEL_PRECIP_1">PRECIP</string>
-    <string id="LABEL_PRECIP_3">PRECIP</string>
+    <string id="LABEL_PRECIP_3">PRECIPITATION</string>
     <string id="LABEL_NEXTSUN_1">SUN</string>
     <string id="LABEL_NEXTSUN_2">NEXT SUN</string>
     <string id="LABEL_NEXTSUN_3">NEXT SUN EVNT</string>
@@ -349,10 +349,10 @@
     <string id="settings_chance_of_precipitation" scope="settings">Chance of Precipitation</string>
     <string id="settings_steps_day" scope="settings">Steps / day</string>
     <string id="settings_wheelchair_pushes_day" scope="settings">Wheelchair pushes / day</string>
-    <string id="settings_calories_kcal_day_2" scope="settings">Calories (kcal) / day</string>
+
     <string id="settings_active_total_calories" scope="settings">Active/Total Calories (kcal) / day</string>
-    <string id="settings_altitude_m_2" scope="settings">Altitude (m)</string>
-    <string id="settings_altitude_ft_2" scope="settings">Altitude (ft)</string>
+
+
     <string id="settings_training_status" scope="settings">Training status</string>
     <string id="settings_military_date_time" scope="settings">Millitary Date Time Group (UTC)</string>
     <string id="settings_current_location_lat_long" scope="settings">Current Location (Lat Long in Decimal Degrees)</string>
@@ -398,21 +398,20 @@
     <string id="settings_calories" scope="settings">Calories</string>
     <string id="settings_floors_climbed" scope="settings">Floors climbed</string>
     <string id="settings_intensity_minutes" scope="settings">Intensiy minutes</string>
-    <string id="settings_date_2" scope="settings">Date</string>
+
     <string id="settings_weather" scope="settings">Weather</string>
     <string id="settings_calendar" scope="settings">Calendar</string>
     <string id="settings_sunrise" scope="settings">Sunrise</string>
     <string id="settings_altitude" scope="settings">Altitude</string>
     <string id="settings_notifications" scope="settings">Notifications</string>
-    <string id="settings_heart_rate_2" scope="settings">Heart rate</string>
+
     <string id="settings_weekly_run_distance" scope="settings">Weekly Run distance</string>
     <string id="settings_weekly_bike_distance" scope="settings">Weekly Bike distance</string>
     <string id="settings_recovery_time" scope="settings">Recovery time</string>
     <string id="settings_stress" scope="settings">Stress</string>
-    <string id="settings_body_battery_2" scope="settings">Body battery</string>
-    <string id="settings_training_status_2" scope="settings">Training status</string>
+
     <string id="settings_race_predictor_5k" scope="settings">Race predictor 5k</string>
-    <string id="settings_pulse_ox_2" scope="settings">Pulse OX</string>
+
     <string id="settings_press_middle_clock" scope="settings">Press middle (clock) to open:</string>
     <string id="settings_press_bottom_left" scope="settings">Press bottom left to open:</string>
     <string id="settings_press_bottom_center" scope="settings">Press bottom center to open:</string>
