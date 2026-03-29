@@ -85,3 +85,5 @@ char id=379 x=91 y=12 width=3 height=10 xoffset=0 yoffset=0 xadvance=4 page=0
 char id=377 x=96 y=12 width=3 height=10 xoffset=0 yoffset=0 xadvance=4 page=0
 char id=323 x=101 y=12 width=5 height=10 xoffset=0 yoffset=0 xadvance=6 page=0
 char id=321 x=108 y=12 width=4 height=10 xoffset=0 yoffset=0 xadvance=5 page=0
+
+char id=8451 x=13 y=0 width=4 height=5 xoffset=0 yoffset=3 xadvance=5 page=0

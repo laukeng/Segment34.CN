@@ -92,3 +92,5 @@ char id=379 x=126 y=16 width=5 height=13 xoffset=0 yoffset=0 xadvance=6 page=0
 char id=377 x=134 y=16 width=5 height=13 xoffset=0 yoffset=0 xadvance=6 page=0
 char id=323 x=142 y=16 width=5 height=13 xoffset=0 yoffset=0 xadvance=6 page=0
 char id=321 x=149 y=16 width=5 height=13 xoffset=0 yoffset=0 xadvance=6 page=0
+
+char id=8451 x=16 y=0 width=5 height=8 xoffset=0 yoffset=3 xadvance=6 page=0
