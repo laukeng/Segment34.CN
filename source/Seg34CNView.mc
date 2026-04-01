@@ -90,6 +90,8 @@ class Seg34CNView extends WatchUi.WatchFace {
     hidden var cachedRunDist7Days as Number = 0;
     hidden var cachedBikeDist7Days as Number = 0;
     hidden var lastActivityDistUpdate as Number = 0;
+    hidden var cachedStressValue as Number? = null;
+    hidden var cachedStressTime as Number? = null;
 
     (:WeatherCache) hidden var lastHfTime as Number? = null;
     (:WeatherCache) hidden var lastCcHash as Number? = null;
@@ -1638,33 +1640,65 @@ class Seg34CNView extends WatchUi.WatchFace {
 
     (:HighMem)
     hidden function getStressData() as Number? {
+        var stressValue = null;
+        
         if (hasComplications) {
             try {
                 var complication_stress = Complications.getComplication(new Id(Complications.COMPLICATION_TYPE_STRESS));
                 if (complication_stress != null && complication_stress.value != null) {
-                    return complication_stress.value;
+                    stressValue = complication_stress.value;
                 }
             } catch(e) {}
         }
-        if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getBodyBatteryHistory) && (Toybox.SensorHistory has :getStressHistory)) {
+        if (stressValue == null && (Toybox has :SensorHistory) && (Toybox.SensorHistory has :getBodyBatteryHistory) && (Toybox.SensorHistory has :getStressHistory)) {
             var st_iterator = Toybox.SensorHistory.getStressHistory({:period => 1});
             if (st_iterator != null) {
                 var st = st_iterator.next();
-                if(st != null) { return st.data; }
+                if(st != null) { stressValue = st.data; }
             }
         }
+        
+        // Update cache if we got a valid value
+        if (stressValue != null) {
+            cachedStressValue = stressValue;
+            cachedStressTime = Time.now().value();
+            return stressValue;
+        }
+        
+        // Check cache if no valid value
+        var now = Time.now().value();
+        if (cachedStressValue != null && cachedStressTime != null && (now - cachedStressTime) < 3600) {
+            return cachedStressValue;
+        }
+        
         return null;
     }
 
     (:LowMem)
     hidden function getStressData() as Number? {
+        var stressValue = null;
+        
         if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getBodyBatteryHistory) && (Toybox.SensorHistory has :getStressHistory)) {
             var st_iterator = Toybox.SensorHistory.getStressHistory({:period => 1});
             if (st_iterator != null) {
                 var st = st_iterator.next();
-                if(st != null) { return st.data; }
+                if(st != null) { stressValue = st.data; }
             }
         }
+        
+        // Update cache if we got a valid value
+        if (stressValue != null) {
+            cachedStressValue = stressValue;
+            cachedStressTime = Time.now().value();
+            return stressValue;
+        }
+        
+        // Check cache if no valid value
+        var now = Time.now().value();
+        if (cachedStressValue != null && cachedStressTime != null && (now - cachedStressTime) < 3600) {
+            return cachedStressValue;
+        }
+        
         return null;
     }
 
@@ -2738,7 +2772,7 @@ class Seg34CNView extends WatchUi.WatchFace {
 
         switch(propDateFormat) {
             case 0: // Default: THU, 14 MAR 2024
-                value = dayNameEN(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " " + today.year;
+                value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " " + today.year;
                 break;
             case 1: // ISO: 2024-03-14
                 value = today.year + "-" + today.month.format("%02d") + "-" + today.day.format("%02d");
@@ -2750,13 +2784,13 @@ class Seg34CNView extends WatchUi.WatchFace {
                 value = today.year + "-" + today.month.format("%02d") + "-" + today.day.format("%02d") + " " + dayName(today.day_of_week);
                 break;
             case 4: // THU, 14 MAR (Week number)
-                value = dayNameEN(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " (W" + isoWeekNumber(today.year, today.month, today.day) + ")";
+                value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " (W" + isoWeekNumber(today.year, today.month, today.day) + ")";
                 break;
             case 5: // THU, 14 MAR 2024 (Week number)
-                value = dayNameEN(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " " + today.year + " (W" + isoWeekNumber(today.year, today.month, today.day) + ")";
+                value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month) + " " + today.year + " (W" + isoWeekNumber(today.year, today.month, today.day) + ")";
                 break;
             case 6: // WEEKDAY, DD MONTH
-                value = dayNameEN(today.day_of_week) + ", " + today.day + " " + monthName(today.month);
+                value = dayName(today.day_of_week) + ", " + today.day + " " + monthName(today.month);
                 break;
             case 7: // WEEKDAY YYYY-MM-DD
                 value = dayName(today.day_of_week) + "  " + today.year + "-" + today.month.format("%02d") + "-" + today.day.format("%02d");
@@ -3312,14 +3346,6 @@ class Seg34CNView extends WatchUi.WatchFace {
                      Rez.Strings.DAY_OF_WEEK_WED, Rez.Strings.DAY_OF_WEEK_THU, Rez.Strings.DAY_OF_WEEK_FRI,
                      Rez.Strings.DAY_OF_WEEK_SAT];
         cachedDayName = Application.loadResource(names[day_of_week - 1]);
-        return cachedDayName;
-    }
-
-    hidden function dayNameEN(day_of_week as Number) as String {
-        if (cachedDayOfWeek == day_of_week) { return cachedDayName; }
-        cachedDayOfWeek = day_of_week;
-        var names = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];   
-        cachedDayName = names[day_of_week - 1];
         return cachedDayName;
     }
 
