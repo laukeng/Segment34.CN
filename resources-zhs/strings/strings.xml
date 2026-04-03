@@ -6,9 +6,6 @@
     <string id="UNIT_FT">FT</string>
     <string id="UNIT_STEPS">STEPS</string>
     <string id="UNIT_PUSHES">PUSHES</string>
-    <string id="LABEL_FL">FL</string>
-    <string id="LABEL_NA">N/A</string>
-    <string id="LABEL_POS_NA">POSITION N/A</string>
 
     <string id="WEATHER_0">晴朗</string>
     <string id="WEATHER_1">局部多云</string>
@@ -201,6 +198,9 @@
     <string id="LABEL_RHR_1">RHR</string>
     <string id="LABEL_RHR_2">REST HR</string>
     <string id="LABEL_RHR_3">RESTING HR</string>
+    <string id="LABEL_FL">FL</string>
+    <string id="LABEL_NA">N/A</string>
+    <string id="LABEL_POS_NA">POSITION N/A</string>
 
     <!-- Settings strings with scope="settings" -->
     <string id="settings_color_theme" scope="settings">色彩主题</string>
@@ -349,10 +349,7 @@
     <string id="settings_chance_of_precipitation" scope="settings">降水概率</string>
     <string id="settings_steps_day" scope="settings">每日步数</string>
     <string id="settings_wheelchair_pushes_day" scope="settings">每日轮椅推动次数</string>
-
     <string id="settings_active_total_calories" scope="settings">每日活动/总卡路里（千卡）</string>
-
-
     <string id="settings_training_status" scope="settings">训练状态</string>
     <string id="settings_military_date_time" scope="settings">军事日期时间组（UTC）</string>
     <string id="settings_current_location_lat_long" scope="settings">当前位置（十进制度数经纬度）</string>
@@ -361,7 +358,7 @@
     <string id="settings_line_2_above_clock" scope="settings">时钟上方第二行显示：</string>
     <string id="settings_line_below_clock" scope="settings">时钟下方显示：</string>
     <string id="settings_bottom_field_layout" scope="settings">底部字段布局（每个字段的位数）</string>
-    <string id="settings_auto_default_layout" scope="settings">自动 - 根据屏幕大小默认布局</string>
+    <string id="settings_auto_default_layout" scope="settings">根据屏幕大小自动布局</string>
     <string id="settings_bottom_value_1_left" scope="settings">底部值1（左）：</string>
     <string id="settings_bottom_value_2" scope="settings">底部值2：</string>
     <string id="settings_bottom_value_3" scope="settings">底部值3：</string>
@@ -398,20 +395,16 @@
     <string id="settings_calories" scope="settings">卡路里</string>
     <string id="settings_floors_climbed" scope="settings">爬楼层数</string>
     <string id="settings_intensity_minutes" scope="settings">高强度分钟数</string>
-
     <string id="settings_weather" scope="settings">天气</string>
     <string id="settings_calendar" scope="settings">日历</string>
     <string id="settings_sunrise" scope="settings">日出</string>
     <string id="settings_altitude" scope="settings">海拔</string>
     <string id="settings_notifications" scope="settings">通知</string>
-
     <string id="settings_weekly_run_distance" scope="settings">每周跑步距离</string>
     <string id="settings_weekly_bike_distance" scope="settings">每周骑行距离</string>
     <string id="settings_recovery_time" scope="settings">恢复时间</string>
     <string id="settings_stress" scope="settings">压力</string>
-
     <string id="settings_race_predictor_5k" scope="settings">5公里比赛预测</string>
-
     <string id="settings_press_middle_clock" scope="settings">按中间（时钟）打开：</string>
     <string id="settings_press_bottom_left" scope="settings">按左下角打开：</string>
     <string id="settings_press_bottom_center" scope="settings">按底部中央打开：</string>

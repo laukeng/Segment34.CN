@@ -6,9 +6,6 @@
     <string id="UNIT_FT">FT</string>
     <string id="UNIT_STEPS">STEPS</string>
     <string id="UNIT_PUSHES">PUSHES</string>
-    <string id="LABEL_FL">FL</string>
-    <string id="LABEL_NA">N/A</string>
-    <string id="LABEL_POS_NA">POSITION N/A</string>
 
     <string id="WEATHER_0">CLEAR</string>
     <string id="WEATHER_1">PARTLY CLOUDY</string>
@@ -201,6 +198,9 @@
     <string id="LABEL_RHR_1">RHR</string>
     <string id="LABEL_RHR_2">REST HR</string>
     <string id="LABEL_RHR_3">RESTING HR</string>
+    <string id="LABEL_FL">FL</string>
+    <string id="LABEL_NA">N/A</string>
+    <string id="LABEL_POS_NA">POSITION N/A</string>
 
     <!-- Settings strings with scope="settings" -->
     <string id="settings_color_theme" scope="settings">Color Theme</string>
@@ -349,10 +349,7 @@
     <string id="settings_chance_of_precipitation" scope="settings">Chance of Precipitation</string>
     <string id="settings_steps_day" scope="settings">Steps / day</string>
     <string id="settings_wheelchair_pushes_day" scope="settings">Wheelchair pushes / day</string>
-
     <string id="settings_active_total_calories" scope="settings">Active/Total Calories (kcal) / day</string>
-
-
     <string id="settings_training_status" scope="settings">Training status</string>
     <string id="settings_military_date_time" scope="settings">Millitary Date Time Group (UTC)</string>
     <string id="settings_current_location_lat_long" scope="settings">Current Location (Lat Long in Decimal Degrees)</string>
@@ -361,7 +358,7 @@
     <string id="settings_line_2_above_clock" scope="settings">Line 2 above clock shows:</string>
     <string id="settings_line_below_clock" scope="settings">Line below clock shows:</string>
     <string id="settings_bottom_field_layout" scope="settings">Bottom field layout (number of digits per field)</string>
-    <string id="settings_auto_default_layout" scope="settings">Auto - Default layout depending on screen size</string>
+    <string id="settings_auto_default_layout" scope="settings">Auto layout depending on screen size</string>
     <string id="settings_bottom_value_1_left" scope="settings">Bottom value 1 (left):</string>
     <string id="settings_bottom_value_2" scope="settings">Bottom value 2:</string>
     <string id="settings_bottom_value_3" scope="settings">Bottom value 3:</string>
@@ -398,20 +395,16 @@
     <string id="settings_calories" scope="settings">Calories</string>
     <string id="settings_floors_climbed" scope="settings">Floors climbed</string>
     <string id="settings_intensity_minutes" scope="settings">Intensiy minutes</string>
-
     <string id="settings_weather" scope="settings">Weather</string>
     <string id="settings_calendar" scope="settings">Calendar</string>
     <string id="settings_sunrise" scope="settings">Sunrise</string>
     <string id="settings_altitude" scope="settings">Altitude</string>
     <string id="settings_notifications" scope="settings">Notifications</string>
-
     <string id="settings_weekly_run_distance" scope="settings">Weekly Run distance</string>
     <string id="settings_weekly_bike_distance" scope="settings">Weekly Bike distance</string>
     <string id="settings_recovery_time" scope="settings">Recovery time</string>
     <string id="settings_stress" scope="settings">Stress</string>
-
     <string id="settings_race_predictor_5k" scope="settings">Race predictor 5k</string>
-
     <string id="settings_press_middle_clock" scope="settings">Press middle (clock) to open:</string>
     <string id="settings_press_bottom_left" scope="settings">Press bottom left to open:</string>
     <string id="settings_press_bottom_center" scope="settings">Press bottom center to open:</string>
