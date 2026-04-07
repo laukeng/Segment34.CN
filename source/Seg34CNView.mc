@@ -671,7 +671,7 @@ class Seg34CNView extends WatchUi.WatchFace {
         values[:dataLeftBar] = getBarData(propLeftBarShows);
         values[:dataRightBar] = getBarData(propRightBarShows);
 
-        if(!infoMessage.length() == 0) {
+        if(infoMessage.length() != 0) {
             values[:dataBelow] = infoMessage;
             infoMessage = ""; 
         }
