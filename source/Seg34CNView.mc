@@ -2234,7 +2234,6 @@ class Seg34CNView extends WatchUi.WatchFace {
                         val = steps_k.format("%d") + "K";
                     }
                 }
-
             }
         } else if(complicationType == 18) { // Distance (m) / day
             if(activityInfo == null) { activityInfo = ActivityMonitor.getInfo(); }
@@ -2426,7 +2425,6 @@ class Seg34CNView extends WatchUi.WatchFace {
             } else {
                 val = Application.loadResource(Rez.Strings.LABEL_POS_NA);
             }
-            
         } else if(complicationType == 61) { // Location Millitary format
             var pos = Activity.getActivityInfo().currentLocation;
             if(pos != null) {
@@ -2434,7 +2432,6 @@ class Seg34CNView extends WatchUi.WatchFace {
             } else {
                 val = Application.loadResource(Rez.Strings.LABEL_POS_NA);
             }
-            
         } else if(complicationType == 62) { // Location Accuracy
             var acc = Activity.getActivityInfo().currentLocationAccuracy;
             if(acc != null) {
@@ -3043,7 +3040,7 @@ class Seg34CNView extends WatchUi.WatchFace {
 
     hidden function getHumidity() as String {
         var ret = "";
-        if(weatherCondition != null and weatherCondition.relativeHumidity != null) {
+        if(weatherCondition != null and weatherCondition has :relativeHumidity and weatherCondition.relativeHumidity != null) {
             ret = weatherCondition.relativeHumidity.format("%d") + "%";
         }
         return ret;
