@@ -868,7 +868,7 @@ class Seg34CNView extends WatchUi.WatchFace {
 
                 // Draw Moon
                 dc.setColor(themeColors[moon], Graphics.COLOR_TRANSPARENT);
-                dc.drawText(centerX, marginY + ((top_data_height + tinyDataHeight) / 2), fontMoon, values[:dataMoon], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+                dc.drawText(centerX, marginY + 2 + ((top_data_height + tinyDataHeight) / 2), fontMoon, values[:dataMoon], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
             } else {
                 if(top_data_height == halfMarginY) { top_field_font = fontSmallData; }
                 dc.drawText(centerX - top_field_center_offset, marginY + top_data_height, top_field_font, values[:dataTopLeft], Graphics.TEXT_JUSTIFY_RIGHT);
@@ -995,7 +995,7 @@ class Seg34CNView extends WatchUi.WatchFace {
 
                 // Draw Moon
                 dc.setColor(themeColors[moon], Graphics.COLOR_TRANSPARENT);
-                dc.drawText(centerX, marginY + ((top_data_height + tinyDataHeight) / 2), fontMoon, values[:dataMoon], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+                dc.drawText(centerX, marginY + 2 + ((top_data_height + tinyDataHeight) / 2), fontMoon, values[:dataMoon], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
             } else {
                 if(top_data_height == halfMarginY) { top_field_font = fontSmallData; }
                 dc.drawText(centerX - top_field_center_offset, marginY + top_data_height, top_field_font, values[:dataTopLeft], Graphics.TEXT_JUSTIFY_RIGHT);
@@ -2842,45 +2842,41 @@ class Seg34CNView extends WatchUi.WatchFace {
     }
 
     hidden function moonPhase(time) as String {
+        // if(time.month == 5 and time.day == 4) {
+        //     return "v"; // That's no moon! (Death Star easter egg)
+        // }
+
         var jd = julianDay(time.year, time.month, time.day);
+        var knownNewMoonJd = 2451550.25987;  // 2000-01-06 18:14:13 UT
+        var synodicMonth = 29.530588853;
 
-        var days_since_new_moon = jd - 2459966;
-        var lunar_cycle = 29.53;
-        var phase = ((days_since_new_moon / lunar_cycle) * 100).toNumber() % 100;
-        var into_cycle = (phase / 100.0) * lunar_cycle;
+        var deltaDays = jd - knownNewMoonJd;
+        var phase = deltaDays / synodicMonth;
+        phase = phase - Math.floor(phase);
 
-        if(time.month == 5 and time.day == 4) {
-            return "8"; // That's no moon!
-        }
+        // Map 0.0-1.0 phase to 30 icons (0-29).
+        //   phase 0.0 = new moon → icon 0 (index 0)
+        //   phase 0.5 = full moon → icon 15 (index 15)
+        //   phase ~1.0 = new moon → icon 29 (index 29)
+        var phaseIdx = Math.floor(phase * 30).toNumber();
+        if (phaseIdx >= 30) { phaseIdx = 29; }
 
-        var moonPhase;
-        if (into_cycle < 3) { // 2+1
-            moonPhase = 0;
-        } else if (into_cycle < 6) { // 4
-            moonPhase = 1;
-        } else if (into_cycle < 10) { // 4
-            moonPhase = 2;
-        } else if (into_cycle < 14) { // 4
-            moonPhase = 3;
-        } else if (into_cycle < 18) { // 4
-            moonPhase = 4;
-        } else if (into_cycle < 22) { // 4
-            moonPhase = 5;
-        } else if (into_cycle < 26) { // 4
-            moonPhase = 6;
-        } else if (into_cycle < 29) { // 3
-            moonPhase = 7;
-        } else {
-            moonPhase = 0;
-        }
-
-        // If hemisphere is 1 (southern), invert the phase index
+        // Southern hemisphere: mirror the phase around full (idx 15)
         if (propHemisphere == 1) {
-            moonPhase = (8 - moonPhase) % 8;
+            phaseIdx = 29 - phaseIdx;
         }
 
-        return moonPhase.toString();
-
+        // Character mapping (must match moon.fnt char ids):
+        //   indices 0..9  → '0'..'9'  (ASCII 48..57) 
+        //   indices 10..19 → ':' ';' '<' '=' '>' '?' '@' 'A' 'B' 'C'  (ASCII 58..67)
+        //   indices 20..29 → 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M'  (ASCII 68..77)
+        if (phaseIdx < 10) {
+            return phaseIdx.toString();
+        } else {
+            var offset = phaseIdx - 10;
+            var chars = ":;<=>?@ABCDEFGHIJKLM";
+            return chars.substring(offset, offset + 1);
+        }
     }
 
     hidden function formatDistanceByWidth(distance as Float, width as Number) as String {
