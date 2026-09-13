@@ -412,6 +412,9 @@
     <string id="settings_hemisphere_moon" scope="settings">Hemisphere (for Moon icon)</string>
     <string id="settings_northern" scope="settings">Northern</string>
     <string id="settings_southern" scope="settings">Southern</string>
+    <string id="settings_moon_BG" scope="settings">Moon phase background</string>
+    <string id="settings_moon_BG_off" scope="settings">Off</string>
+    <string id="settings_moon_BG_on" scope="settings">On</string>
     <string id="settings_time_format" scope="settings">Time format (12/24h)</string>
     <string id="settings_auto_use_system" scope="settings">Auto - Use system setting</string>
     <string id="settings_24h" scope="settings">24h</string>
